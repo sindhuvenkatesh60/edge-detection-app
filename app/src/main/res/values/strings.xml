@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Edge Detection Pro</string>
+    <string name="app_description">Advanced image edge detection application</string>
+
+    <!-- Main Activity -->
+    <string name="welcome_title">Edge Detection</string>
+    <string name="welcome_subtitle">Detect edges in your images</string>
+    <string name="camera_button">Open Camera</string>
+    <string name="gallery_button">Choose from Gallery</string>
+    <string name="detect_edges_button">Detect Edges</string>
+    <string name="save_image_button">Save Image</string>
+    <string name="share_image_button">Share Image</string>
+
+    <!-- Camera Activity -->
+    <string name="take_photo">Take Photo</string>
+    <string name="switch_camera">Switch Camera</string>
+    <string name="flash_on">Flash ON</string>
+    <string name="flash_off">Flash OFF</string>
+
+    <!-- Permissions -->
+    <string name="camera_permission_required">Camera permission is required to capture photos</string>
+    <string name="storage_permission_required">Storage permission is required to save images</string>
+    <string name="permission_denied">Permission denied. Some features may not work properly.</string>
+
+    <!-- Messages -->
+    <string name="processing_image">Processing image…</string>
+    <string name="edge_detection_complete">Edge detection complete</string>
+    <string name="image_saved">Image saved to gallery</string>
+    <string name="error_loading_image">Error loading image</string>
+    <string name="no_camera_available">No camera available</string>
+    <string name="error_saving_image">Error saving image</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="edge_threshold">Edge Threshold</string>
+    <string name="blur_intensity">Blur Intensity</string>
+    <string name="algorithm_type">Algorithm Type</string>
+
+    <!-- Algorithms -->
+    <string name="canny">Canny Edge Detector</string>
+    <string name="sobel">Sobel Operator</string>
+    <string name="laplacian">Laplacian Operator</string>
+</resources>
