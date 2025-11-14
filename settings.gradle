@@ -12,7 +12,12 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+<<<<<<< HEAD
 
 rootProject.name = "Edge Detection App"
 include ':app'
 include ':opencv'
+=======
+rootProject.name = "EdgeDetectionApp"
+include ':app'
+>>>>>>> 256b516098975afc85a50ec838aac4e8c57d69c6

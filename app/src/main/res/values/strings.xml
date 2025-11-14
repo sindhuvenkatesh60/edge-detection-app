@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Edge Detection Pro</string>
     <string name="app_description">Advanced image edge detection application</string>
 
@@ -40,4 +41,7 @@
     <string name="canny">Canny Edge Detector</string>
     <string name="sobel">Sobel Operator</string>
     <string name="laplacian">Laplacian Operator</string>
+=======
+    <string name="app_name">Edge Detection App</string>
+>>>>>>> 256b516098975afc85a50ec838aac4e8c57d69c6
 </resources>

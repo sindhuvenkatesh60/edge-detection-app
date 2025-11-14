@@ -1,4 +1,5 @@
 #include <jni.h>
+<<<<<<< HEAD
 #include <string>
 #include <android/bitmap.h>
 #include <android/log.h>
@@ -10,11 +11,19 @@
 #define LOG_TAG "EdgeDetection"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
+=======
+#include <opencv2/opencv.hpp>
+#include <android/log.h>
+
+#define LOG_TAG "EdgeDetection"
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
+>>>>>>> 256b516098975afc85a50ec838aac4e8c57d69c6
 
 using namespace cv;
 
 extern "C" {
 
+<<<<<<< HEAD
 JNIEXPORT jboolean JNICALL
 Java_com_example_edgedetection_ImageProcessor_processImage(
         JNIEnv *env,
@@ -123,6 +132,33 @@ Java_com_example_edgedetection_MainActivity_getOpenCVVersion(JNIEnv *env, jobjec
     std::string version = "OpenCV Version: ";
     version += CV_VERSION;
     return env->NewStringUTF(version.c_str());
+=======
+JNIEXPORT void JNICALL
+Java_com_example_edgedetection_OpenGLRenderer_processFrame(
+        JNIEnv *env,
+        jobject /* this */,
+        jlong matAddr) {
+    
+    Mat& frame = *(Mat*)matAddr;
+    
+    if (frame.empty()) {
+        LOGI("Frame is empty!");
+        return;
+    }
+    
+    // Convert to grayscale
+    Mat gray;
+    cvtColor(frame, gray, COLOR_RGBA2GRAY);
+    
+    // Apply Canny edge detection
+    Mat edges;
+    Canny(gray, edges, 50, 150);
+    
+    // Convert back to RGBA for display
+    cvtColor(edges, frame, COLOR_GRAY2RGBA);
+    
+    LOGI("Frame processed successfully!");
+>>>>>>> 256b516098975afc85a50ec838aac4e8c57d69c6
 }
 
 }
